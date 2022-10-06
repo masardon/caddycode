@@ -30,7 +30,7 @@ More reference about Tailscale implementation to secure our Workspace, we can fo
 
 **_Enjoy Worry-free Mobile Work from Anywhere using our Mobile Device_**
 
-### First-time Working using Git
+### First-time Working with Git
 * Set up git with your user name and email.
   - Open a terminal/shell and type:
 
