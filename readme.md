@@ -26,6 +26,10 @@ For more details about Tailscale, please visit this [link](https://tailscale.com
 
 More reference about Tailscale implementation to secure our Workspace, we can follow this [guide](https://tailscale.com/kb/1166/vscode-ipad/).
 
+![Safari PWA](/images/iPadOS.png)
+
+Enjoy and Worry free Mobile Working from Anywhere using your Mobile Devices.
+
 ### First-time Working using Git
 * Set up git with your user name and email.
   - Open a terminal/shell and type:
