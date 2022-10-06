@@ -1,0 +1,3 @@
+bind-addr: [ipaddress:port]
+auth: none
+cert: false

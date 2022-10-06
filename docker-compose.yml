@@ -1,0 +1,44 @@
+version: "3.9"
+
+services:
+  caddy:
+    image: caddy:latest
+    deploy:
+      restart_policy:
+        condition: on-failure
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    volumes:
+      - $PWD/Caddyfile:/etc/caddy/Caddyfile
+      - $PWD/caddy_data:/data
+      - $PWD/caddy_config:/config
+      - $PWD/cert:/cert
+    networks:
+      - caddycode
+    depends_on:
+      - devops-tools
+
+  devops-tools:
+    image: codercom/code-server:latest
+    deploy:
+      restart_policy:
+        condition: on-failure
+    volumes:
+      - $PWD/.config:/home/coder/.config
+      - $PWD/project:/home/coder/project
+    networks:
+      - caddycode
+
+volumes:
+  caddy_data:
+    external: true
+  caddy_config:
+  cert:
+    external: true
+  project:
+    external: true
+
+networks:
+  caddycode:

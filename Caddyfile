@@ -1,0 +1,4 @@
+devops.mydomain.dev {
+    tls [path-to-cert-file] [path-to-key-file]
+    reverse_proxy devops-tools:8080
+}
