@@ -21,7 +21,7 @@ There are also multiple persistent volumes configured to store your data, config
 
 ### Tailscale Integration
 Caddy will serve Public HTTPS access by default, if we need a more secure Workspace, we can integrate it with Tailscale - Zero Config VPN free service.
-Tailscale will provide a VPN mesh across our devices and allow us to use Google Auth as an authentication method for our organization.
+Tailscale will provide a mesh VPN across our devices and allow us to use Google Auth as an authentication method for our organization.
 For more details about Tailscale, please visit this [link](https://tailscale.com).
 
 More reference about Tailscale implementation to secure our Workspace, we can follow this [guide](https://tailscale.com/kb/1166/vscode-ipad/).
