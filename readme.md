@@ -50,3 +50,4 @@ More reference about Tailscale implementation to secure our Workspace, we can fo
         Hi username! You've successfully authenticated, but Github does not provide shell access.
         
 * Create a new repository in our Github account and follow the instructions to start using newly created repository.
+* We can also authorize our Code Server using the built-in Github Authentication extension.
