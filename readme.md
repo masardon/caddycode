@@ -28,7 +28,7 @@ More reference about Tailscale implementation to secure our Workspace, we can fo
 
 ![Safari PWA](/images/iPadOS.png)
 
-Enjoy and Worry free Mobile Working from Anywhere using your Mobile Devices.
+**_Enjoy Worry-free Mobile Work from Anywhere using our Mobile Device_**
 
 ### First-time Working using Git
 * Set up git with your user name and email.
