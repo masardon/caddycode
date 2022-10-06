@@ -3,6 +3,8 @@
 Here is a simple Containerized App for Code Server (VSCode) combined with Caddy as Reverse Proxy served in Secure HTTPS.
 There are also multiple persistent volumes configured to store your data, configuration, and projects.
 
+![Code Server](/images/CodeServer.png)
+
 ### Let's explain it one by one
 >_docker-compose.yml_
 >>The main docker compose file to serve 2 services above (Code Server and Caddy).
