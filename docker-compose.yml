@@ -4,6 +4,7 @@ services:
   caddy:
     image: caddy:latest
     deploy:
+      replicas: 2
       restart_policy:
         condition: on-failure
     ports:
@@ -23,6 +24,7 @@ services:
   devops-tools:
     image: codercom/code-server:latest
     deploy:
+      replicas: 3
       restart_policy:
         condition: on-failure
     volumes:
@@ -33,12 +35,9 @@ services:
 
 volumes:
   caddy_data:
-    external: true
   caddy_config:
   cert:
-    external: true
   project:
-    external: true
 
 networks:
   caddycode:
