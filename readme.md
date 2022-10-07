@@ -35,7 +35,7 @@ More reference about Tailscale implementation to secure our Workspace, we can fo
   - Open a terminal/shell and type:
 
         $ git config --global user.name "Your name here"
-        $ git config --global user.name "Your name here"
+        $ git config --global user.email "your@email.com"
 
   - Set up ssh on your computer. And generate the public key, if not already, by running this command:
   
