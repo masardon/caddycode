@@ -7,9 +7,9 @@ On_Green='\033[42m'
 On_Red='\033[41m'
 On_Blue='\033[44m'
 
-echo "---------------------------------"
-echo "Checking Required Files & Volumes"
-echo "---------------------------------"
+echo "-------------------------------------"
+echo "Checking Required File(s) & Volume(s)"
+echo "-------------------------------------"
 
 # Checking Required Files
 if [ -f $PWD/Caddyfile ] && [ -f $PWD/.config/code-server/config.yaml ] && [ -f $PWD/docker-compose.yml ]
