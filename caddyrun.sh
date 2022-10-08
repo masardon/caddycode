@@ -19,7 +19,7 @@ then
         echo "Woyoo!! All required volumes exists"
 else
         echo "One or more required volume(s) doesn't exists. Please check!"
-        exit 999
+        exit 9999
 fi
 
 echo "Which one do you want to execute :"
