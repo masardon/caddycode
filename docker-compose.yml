@@ -4,7 +4,6 @@ services:
   caddy:
     image: caddy:latest
     deploy:
-      replicas: 2
       restart_policy:
         condition: on-failure
     ports:
@@ -24,11 +23,13 @@ services:
   devops-tools:
     image: codercom/code-server:latest
     deploy:
-      replicas: 3
+      replicas: 2
       restart_policy:
         condition: on-failure
     volumes:
       - $PWD/.config:/home/coder/.config
+      - $PWD/.data:/home/coder/.local
+      - $PWD/.ssh:/home/coder/.ssh
       - $PWD/project:/home/coder/project
     networks:
       - caddycode
