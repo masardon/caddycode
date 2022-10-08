@@ -22,6 +22,7 @@ fi
 
 # Checking Required Volumes
 if [ -d $PWD/caddy_config ] && [ -d $PWD/caddy_data ] && [ -d $PWD/project ]
+# if [ -d $PWD/caddy_config ] && [ -d $PWD/caddy_data ] && [ -d $PWD/.data ] && [ -d $PWD/.ssh ] && [ -d $PWD/cert ] && [ -d $PWD/project ]
 then
         echo -e "${Green}Woyoo!! All required volumes found!${NC}"
         echo "------------------------------------"
