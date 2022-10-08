@@ -14,7 +14,7 @@ services:
       - $PWD/Caddyfile:/etc/caddy/Caddyfile
       - $PWD/caddy_data:/data
       - $PWD/caddy_config:/config
-#      - $PWD/cert:/cert                    ## Optional if we are using self generated certificate
+#      - $PWD/cert:/cert                    ## Optional if we use self-generated certificate
     networks:
       - caddycode
     depends_on:
@@ -28,8 +28,8 @@ services:
         condition: on-failure
     volumes:
       - $PWD/.config:/home/coder/.config
-#      - $PWD/.data:/home/coder/.local      ## Optional, persistent volume used for code-server user settings
-#      - $PWD/.ssh:/home/coder/.ssh         ## Optional, persistent volume to save ssh key
+#      - $PWD/.data:/home/coder/.local      ## Optional, persistent volume used for code server user settings
+#      - $PWD/.ssh:/home/coder/.ssh         ## Optional, persistent volume to store ssh keys
       - $PWD/project:/home/coder/project
     networks:
       - caddycode
