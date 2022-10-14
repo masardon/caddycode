@@ -14,7 +14,7 @@ services:
       - $PWD/Caddyfile:/etc/caddy/Caddyfile
       - $PWD/caddy_data:/data
       - $PWD/caddy_config:/config
-      - $PWD/cert:/cert                    ## Optional if we use self-generated certificate
+#      - $PWD/cert:/cert                    ## Optional if we use self-generated certificate only
     networks:
       - caddycode
     depends_on:
