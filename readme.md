@@ -51,3 +51,17 @@ More reference about Tailscale implementation to secure our Workspace, we can fo
         
 * Create a new repository in our Github account and follow the instructions to start using newly created repository.
 * We can also authorize our Code Server using the built-in Github Authentication extension.
+
+### Monitoring Integration
+Monitoring using cAdvisor, Prometheus and Grafana would be a good idea, if we care about resources, usage and performance of our containers.
+> _cAdvisor_
+>> cAdvisor (Container Advisor) provides container users an understanding of the resource usage and performance characteristics of their running containers. It is a running daemon that collects, aggregates, processes, and exports information about running containers. (source:[link](https://github.com/google/cadvisor))
+
+> _Prometheus_
+>> Prometheus is an open-source systems monitoring and alerting toolkit originally built at SoundCloud.
+>> Prometheus collects and stores its metrics as time series data, i.e. metrics information is stored with the timestamp at which it was recorded, alongside optional key-value pairs called labels. (source:[link](https://prometheus.io/docs/introduction/overview/))
+
+> _Grafana_
+>> Grafana open source software enables you to query, visualize, alert on, and explore your metrics, logs, and traces wherever they are stored. (source:[link](https://grafana.com/docs/grafana/latest/introduction/))
+
+![Grafana Dashboard](/images/Grafana.png)
