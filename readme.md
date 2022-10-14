@@ -54,6 +54,9 @@ More reference about Tailscale implementation to secure our Workspace, we can fo
 
 ### Monitoring Integration
 Monitoring using cAdvisor, Prometheus and Grafana would be a good idea, if we care about resources, usage and performance of our containers.
+
+![Grafana Dashboard](/images/Grafana.png)
+
 > _cAdvisor_
 >> cAdvisor (Container Advisor) provides container users an understanding of the resource usage and performance characteristics of their running containers. It is a running daemon that collects, aggregates, processes, and exports information about running containers. (source:[link](https://github.com/google/cadvisor))
 
@@ -63,5 +66,3 @@ Monitoring using cAdvisor, Prometheus and Grafana would be a good idea, if we ca
 
 > _Grafana_
 >> Grafana open source software enables you to query, visualize, alert on, and explore your metrics, logs, and traces wherever they are stored. (source:[link](https://grafana.com/docs/grafana/latest/introduction/))
-
-![Grafana Dashboard](/images/Grafana.png)
